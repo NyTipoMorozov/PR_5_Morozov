@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        
+        </Grid.ColumnDefinitions>
+        <TextBlock>
+            Данная страница находиться в оконном приложении
+        </TextBlock>
+        <Frame Grid.Column="1" Source="Page1.Xaml" Margin="3"
+               BorderBrush="LimeGreen" BorderThickness="2"></Frame>
         
     </Grid>
 </Window>
