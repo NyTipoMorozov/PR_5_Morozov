@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FFE8FFD7" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="241*"/>
             <ColumnDefinition Width="307*"/>
@@ -17,6 +23,34 @@
             <RowDefinition Height="320*"/>
         </Grid.RowDefinitions>
         <Label Content="Window1"></Label>
+        <Frame Grid.Column="1" Source="Page4.Xaml" 
+               BorderBrush="YellowGreen" BorderThickness="2" Grid.Row="1">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFE8FFD7" Offset="1"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        <Frame Grid.Column="2" Source="Page5.Xaml" 
+               BorderBrush="YellowGreen" BorderThickness="2" Grid.Row="1" Navigated="Frame_Navigated" >
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFE8FFD7" Offset="1"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+
+        <Frame Grid.Column="1" Source="Page6.Xaml" 
+               BorderBrush="YellowGreen" BorderThickness="2"  Grid.ColumnSpan="2" >
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFE8FFD7" Offset="1"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
 
     </Grid>
 </Window>

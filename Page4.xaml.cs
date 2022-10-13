@@ -10,23 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace PR_5_Morozov
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для Page4.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Page4 : Page
     {
-        public Window1()
+        public Page4()
         {
             InitializeComponent();
-        }
-
-        private void Frame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
-        {
-
         }
     }
 }
