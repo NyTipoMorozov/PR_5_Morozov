@@ -28,5 +28,16 @@ namespace PR_5_Morozov
         {
 
         }
+
+        private void B1_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            window2.Show();
+        }
+
+        private void B3_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

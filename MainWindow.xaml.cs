@@ -30,5 +30,11 @@ namespace PR_5_Morozov
             Window1 window1 = new Window1();
             window1.Show();
         }
+
+        private void B2_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            window2.Show();
+        }
     }
 }

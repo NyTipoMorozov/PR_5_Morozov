@@ -11,7 +11,8 @@
             <RowDefinition/>
             <RowDefinition Height="19*"/>
             <RowDefinition Height="58*"/>
-            <RowDefinition Height="341*"/>
+            <RowDefinition Height="56*"/>
+            <RowDefinition Height="285*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="305*"></ColumnDefinition>
@@ -19,12 +20,21 @@
             <ColumnDefinition Width="53*"/>
             <ColumnDefinition Width="396*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.ColumnSpan="3" Grid.RowSpan="3"  Grid.Row="1">
+        <TextBlock Grid.ColumnSpan="3" Grid.RowSpan="4"  Grid.Row="1">
             Данная страница находиться в оконном приложении
         </TextBlock>
         <Frame Grid.Column="3" Source="Page1.Xaml" 
-               BorderBrush="LimeGreen" BorderThickness="2" Grid.RowSpan="3" Grid.Row="1"></Frame>
+               BorderBrush="LimeGreen" BorderThickness="2" Grid.RowSpan="4" Grid.Row="1"></Frame>
         <Button x:Name="B1" Content="Задание 1" Click="B1_Click" Grid.Row="2" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF6DFFF8" Offset="1"/>
+                    <GradientStop Color="#FFC7C3F1" Offset="0.991"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="B2" Content="Задание 2" Click="B2_Click"  Grid.Row="3"  >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="0"/>
