@@ -16,20 +16,13 @@ using System.Windows.Shapes;
 namespace PR_5_Morozov
 {
     /// <summary>
-    /// Логика взаимодействия для Page1.xaml
+    /// Логика взаимодействия для Page8.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class Page8 : Page
     {
-        public Page1()
+        public Page8()
         {
             InitializeComponent();
-        }
-
-    
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-           
-
         }
     }
 }

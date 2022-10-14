@@ -23,5 +23,10 @@ namespace PR_5_Morozov
         {
             InitializeComponent();
         }
+
+        private void ExitClick1(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
